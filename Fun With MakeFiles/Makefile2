@@ -1,0 +1,4 @@
+all:
+	gcc -static -c hw9-lib-chrisdavis.c
+	ar -cvq libhw9-lib-chrisdavis.a hw9-lib-chrisdavis.o
+	gcc -o hw9 hw9-chrisdavis.c -L"./" -lhw9-lib-chrisdavis

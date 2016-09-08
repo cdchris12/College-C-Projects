@@ -1,0 +1,4 @@
+all:
+	gcc -fPIC -c hw9-lib-chrisdavis-4.c
+	gcc -shared -o libhw9-lib-chrisdavis.so hw9-lib-chrisdavis.o
+	gcc -o hw9 -ldl hw9-chrisdavis-4.c -L"./" -lhw9-lib-chrisdavis

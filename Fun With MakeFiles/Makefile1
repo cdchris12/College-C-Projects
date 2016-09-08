@@ -1,0 +1,3 @@
+all:
+	gcc -c hw9-lib-chrisdavis.c
+	gcc hw9-chrisdavis.c hw9-lib-chrisdavis.o -o hw9

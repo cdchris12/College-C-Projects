@@ -1,0 +1,3 @@
+all:
+	gcc -c -g -shared -fPIC hw9-lib-chrisdavis.c -Wall -o libhw9-lib-chrisdavis.so -pedantic
+	gcc -o hw9 hw9-chrisdavis.c -L"./" -lhw9-lib-chrisdavis -pedantic
